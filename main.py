@@ -11,7 +11,8 @@ async def main():
     try:
         await dp.start_polling(bot, skip_updates=True)
     finally:
-from co_functions import _session        if _session and not _session.closed:
+        from co_functions import _session
+        if _session and not _session.closed:
             await _session.close()
 
 if __name__ == "__main__":
