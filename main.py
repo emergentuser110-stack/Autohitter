@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher
 from config import BOT_TOKEN
 from commands import router
 
-bot = Bot(token=7462015059:AAHvril2N88_zmQ15_Prv93o_rzgGH1PhpY)
+bot = Bot(token="7462015059:AAHvril2N88_zmQ15_Prv93o_rzgGH1PhpY")
 dp = Dispatcher()
 dp.include_router(router)
 
