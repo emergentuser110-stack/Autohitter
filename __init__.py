@@ -1,9 +1,7 @@
 from aiogram import Router
+from .start import router as start_router
+from .co import router as co_router
 
 router = Router()
-
-from commands.start import router as start_router
-from commands.co import router as co_router
-
 router.include_router(start_router)
 router.include_router(co_router)
