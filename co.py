@@ -1,16 +1,8 @@
-import time
-import re
-import aiohttp
-import base64
-import asyncio
-import json
-import os
-from urllib.parse import unquote
 from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import Command
 from aiogram.enums import ParseMode
-
+import time
 router = Router()
 
 ALLOWED_GROUP = -1002580776085
